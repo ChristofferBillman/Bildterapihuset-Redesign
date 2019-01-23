@@ -1,0 +1,9 @@
+nav {
+    /* vm ellr liknande enhet*/
+    display: inline-block;
+    height: 60px;
+    background-color: lightgray;
+}
+menuitems {
+    margin: 3vw;
+}
