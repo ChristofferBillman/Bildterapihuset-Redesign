@@ -10,5 +10,8 @@ Vad ska jag göra?
 * Lägga in innehållet på sidan.
 
 ## Utvärdering
-######Pass #1:
-Idag så har jag satt upp allt som har med pug att göra, samt skapat en grundläggande struktur för att börja ett projekt."# Bildterapihuset-Redesign" 
+#####Pass #1:
+Idag så har jag satt upp allt som har med pug att göra, samt skapat en grundläggande struktur för att börja ett projekt. Sedan så har jag smått börjat på navbaren.
+
+
+"# Bildterapihuset-Redesign" 
