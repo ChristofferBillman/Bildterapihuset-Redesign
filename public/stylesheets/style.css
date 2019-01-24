@@ -1,9 +1,28 @@
-nav {
-    /* vm ellr liknande enhet*/
-    display: inline-block;
-    height: 60px;
-    background-color: lightgray;
+html {
+    max-width: 100%;
+    overflow-x: hidden;
 }
-menuitems {
-    margin: 3vw;
+#menuBtn {
+    display: block;
+    width: 40px;
+    margin: 10px;
+    z-index: 1;
+    float: right;
+}
+#menu {
+    position: absolute;
+    left: 100vw;
+    top: 0;
+    padding-top: 70px;
+    width: 80vw;
+    height: 100vh;
+    background-color: yellow;
+    transition-duration: 300ms;
+}
+#menuitem {
+    display: block;
+    font-family: Helvetica;
+}
+#logotype {
+    height: 60px;
 }
