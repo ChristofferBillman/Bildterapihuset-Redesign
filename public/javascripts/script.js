@@ -8,3 +8,12 @@ document.getElementById("menuBtn").addEventListener("click", function(){
         open = false;
     }
     });
+
+    document.body.addEventListener("click", e => {
+        var menuDetected = false;
+        for(el of e.path) if(el.id == "menu" || el.id == "menuBtn") menuDetected = true;
+        if(!menuDetected && !open) {
+            document.getElementById("menu").style.left = "100vw"; console.log("pressed")
+            open = true
+        }
+    })
