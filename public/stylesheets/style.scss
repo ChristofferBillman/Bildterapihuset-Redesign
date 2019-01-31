@@ -1,9 +1,12 @@
+$colors : (yellow:'#FFFF66',yellowhite:'#FFFFF5',beige:'#EFE9D3',white:'#FFFFFF',drop-shadow:'rgba(0,0,0,0.1');
+$standard-padding : '10px';
+
 html {
     max-width: 100%;
     overflow-x: hidden;
 }
 body {
-    background-color: #EFE9D3;
+    background-color: map-get($colors, beige);
     overflow-x: hidden;
 }
 #menuBtn {
@@ -18,10 +21,10 @@ body {
     padding-top: 70px;
     width: 80vw;
     height: 100vh;
-    background-color: #FFFF66;
+    background-color: map-get($colors, yellow);
     transition-duration: 200ms;
     display: block;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0 map-get($colors,drop-shadow);
 }
 .menuitem {
     display: block;
@@ -36,13 +39,13 @@ ul {
     height: 60px;
 }
 h1 {
-    padding: 10px;
+    padding: $standard-padding;
     margin: 0;
     font-size: 2rem;
 }
 #topbar {
-    background-color: #FFFFF5;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    background-color: map-get($colors,yellowhite);
+    box-shadow: 0 0 10px 0 map-get($colors,drop-shadow);
     margin-bottom: 30px;
 }
 
@@ -50,21 +53,21 @@ h1 {
 .standard-card {
     width: 90vw;
     height: 400px;
-    background-color: white;
+    background-color: map-get($colors,white);
     border-width: 0;
 }
 .line {
     width: 100%;
     height: 5px;
-    background-color: #FFFF66;
+    background-color: map-get($colors,yellow);
 }
 /* h2 är texten som används högst uppe på ett standard-card. */
 h2 {
     margin: 0;
-    padding: 10px;
+    padding: $standard-padding;
     font-size: 1em;
 }
 p {
     margin: 0;
-    padding: 10px;
+    padding: $standard-padding;
 }

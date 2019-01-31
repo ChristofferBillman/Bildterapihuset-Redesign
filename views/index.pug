@@ -1,5 +1,32 @@
-extend layout
+extends layout
 
-block content 
-    h1 Hej på dig
-    p Lorem
+block content
+
+    main.container-fluid
+        div(class="row")
+            div(class="col-2 col-11")
+
+        block standard-card
+            div(class="standard-card")
+                h2 Aktuellt
+                div(class="line")
+                h1 Välkommen till Bildterapihuset!
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolor tenetur. Exercitationem maiores, adipisci quod accusantium ab deserunt similique blanditiis, dolore vel rerum ullam iusto, veritatis saepe recusandae error cupiditate.
+
+    var news = ['Aktuellt', 'Välkommen']
+
+    mixin article(news)
+        .article
+            .article-wrapper
+            h1= news[0]
+            if block
+                block
+            else
+                p No content provided
+
+
+    +article('Hello world')
+
+    +article('Hello world')
+    p This is my
+    p Amazing article
