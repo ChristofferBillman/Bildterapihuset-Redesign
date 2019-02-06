@@ -1,32 +1,19 @@
 extends layout
 
-block content
-
-    main.container-fluid
-        div(class="row")
-            div(class="col-2 col-11")
-
-        block standard-card
-            div(class="standard-card")
-                h2 Aktuellt
-                div(class="line")
-                h1 Välkommen till Bildterapihuset!
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolor tenetur. Exercitationem maiores, adipisci quod accusantium ab deserunt similique blanditiis, dolore vel rerum ullam iusto, veritatis saepe recusandae error cupiditate.
-
-    var news = ['Aktuellt', 'Välkommen']
-
-    mixin article(news)
-        .article
-            .article-wrapper
-            h1= news[0]
+mixin standard-card(title, h1)
+    div(class="standard-card")
+        h2= title
+        div(class="line")
+            h1= h1
             if block
                 block
             else
-                p No content provided
+                p Nu har något gått fel! Sidan finns inte.
+
+block content
+    main.container-fluid
+        div(class="row d-flex justify-content-center")
+                +standard-card("Aktuellt","Välkommen till Bildterapihuset")
+                    p Hej! Välkommen,
 
 
-    +article('Hello world')
-
-    +article('Hello world')
-    p This is my
-    p Amazing article

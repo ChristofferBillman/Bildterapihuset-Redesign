@@ -1,5 +1,11 @@
-$colors : (yellow:'#FFFF66',yellowhite:'#FFFFF5',beige:'#EFE9D3',white:'#FFFFFF',drop-shadow:'rgba(0,0,0,0.1');
-$standard-padding : '10px';
+$colors: (
+    yellow: #FFFF66,
+    yellowhite:#FFFFF5,
+    beige: #EFE9D3,
+    white: #FFFFFF,
+    drop-shadow:rgba(0,0,0,0.1));
+
+$standard-padding: 10px;
 
 html {
     max-width: 100%;
@@ -52,6 +58,7 @@ h1 {
 /* Card css */
 .standard-card {
     width: 90vw;
+    max-width: 1000px;
     height: 400px;
     background-color: map-get($colors,white);
     border-width: 0;
