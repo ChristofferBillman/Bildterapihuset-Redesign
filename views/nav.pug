@@ -1,13 +1,17 @@
-nav(class="navbar" id="topbar")
-    div(class="col-1 col-9")
-        img(src="/images/Bildterapihuset.svg" id="logotype")
-    div(id="")
-        img(src="/images/menuBtn.svg" id="menuBtn")
-div(id="menu")
-        a(class="menuitem") Aktuellt
-        a(class="menuitem") Om oss
-        a(class="menuitem") Resurser och länkar
-        a(class="menuitem") Kontakt
+nav.navbar#header
+    img#logotype(src="/images/Bildterapihuset.svg")
+    .menuBigContainer
+        a(href="/") Aktuellt
+        a(href="/about") Om oss
+        a(href="/resources") Resurser och länkar
+        a(href="/contact") Kontakt
+    div
+        img#menuBtn(src="/images/menuBtn.svg")
+    div#menu
+            a(class="menuitem" href="/") Aktuellt
+            a(class="menuitem" href="/about") Om oss
+            a(class="menuitem" href="/resources") Resurser och länkar
+            a(class="menuitem" href="/contact") Kontakt
 
 
         

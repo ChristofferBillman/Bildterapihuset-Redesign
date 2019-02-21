@@ -16,4 +16,4 @@ document.getElementById("menuBtn").addEventListener("click", function(){
             document.getElementById("menu").style.left = "100vw"; console.log("pressed")
             open = true
         }
-    })
+    });

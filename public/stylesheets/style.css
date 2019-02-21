@@ -1,14 +1,18 @@
-@charset "UTF-8";
 html {
-  max-width: 100%;
   overflow-x: hidden;
 }
 
 body {
   background-color: #EFE9D3;
-  overflow-x: hidden;
 }
 
+.center-contents {
+  margin: 0 auto;
+  min-width: 300px;
+  width: 60vw;
+}
+
+/* Nav */
 #menuBtn {
   position: relative;
   width: 40px;
@@ -24,7 +28,6 @@ body {
   height: 100vh;
   background-color: #FFFF66;
   transition-duration: 200ms;
-  display: block;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -35,51 +38,114 @@ body {
   font-size: 1.5em;
 }
 
-ul {
-  list-style-type: none;
-}
-
 #logotype {
   height: 60px;
 }
 
-h1 {
-  padding: 10px;
-  margin: 0;
-  font-size: 2rem;
-}
-
-#topbar {
+#header {
   background-color: #FFFFF5;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
-/* Card css */
+.standard-btn {
+  display: inline-block;
+  padding: 10px;
+  background-color: #FFFF66;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+/* Standard-card */
 .standard-card {
   width: 90vw;
   max-width: 1000px;
-  height: 400px;
+  min-height: 400px;
   background-color: #FFFFFF;
   border-width: 0;
 }
 
 .line {
   width: 100%;
-  height: 5px;
+  height: 4px;
   background-color: #FFFF66;
 }
 
-/* h2 är texten som används högst uppe på ett standard-card. */
+.content-container {
+  margin: 10px;
+}
+
+/* Text */
+h1 {
+  padding: 10px;
+  margin: 0;
+  font-size: 2rem;
+  font-family: Work Sans;
+  font-weight: 100;
+}
+
 h2 {
   margin: 0;
   padding: 10px;
   font-size: 1em;
+  color: grey;
+  font-family: Work sans;
 }
 
 p {
   margin: 0;
   padding: 10px;
+  font-family: Assistant;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.lead {
+  font-family: Assistant;
+  font-size: 20px;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Assistant;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  font-family: Assistant;
+}
+
+.menuBigContainer {
+  display: none;
+}
+
+/* Mediaquery */
+@media only screen and (min-width: 600px) {
+  #menuBtn {
+    display: none;
+  }
+
+  a {
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+  }
+
+  .menuBigContainer {
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

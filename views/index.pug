@@ -1,19 +1,21 @@
 extends layout
 
-mixin standard-card(title, h1)
-    div(class="standard-card")
-        h2= title
-        div(class="line")
-            h1= h1
-            if block
-                block
-            else
-                p Nu har något gått fel! Sidan finns inte.
-
 block content
     main.container-fluid
-        div(class="row d-flex justify-content-center")
-                +standard-card("Aktuellt","Välkommen till Bildterapihuset")
-                    p Hej! Välkommen,
+            div.row.d-flex.justify-content-center
+                +standard-card("Välkommen","Välkommen till bildterapihuset!")
+                    p.lead Bildterapihuset drivs av ett nätverk av bildterapeuter. Vi erbjuder bildterapi för individer, familjer och grupper, handledning, kurser och workshops. Bildterapi är en komplementär terapiform som använder bildskapande och samtal för utforskning och bearbetning av tankar, känslor och minnen. Bildterapi kan hjälpa människor att lösa problem, minska stress, stärka självkänslan och komma till insikt.
+                    p Vi har vår verksamhet i en funktionellt inredd lokal på Brogatan 5. Huset ligger inne på gården, i huset bakom Swefo foto. Vår lokal ligger i källarvåningen och det står Bildterapihuset på dörren.
+                    p.bold Passar för dig som söker: 
+                    ul
+                        li Utveckling och förändring på det personliga planet
+                        li Stöd i bearbetning av en aktuell eller genomgången kris
+                        li Andra uttryckssätt än orden
+                    p.bold Bildterapeutiska metoder passar för gruppen som vill:
+                    ul
+                        li Undersöka och förbättra sina kommunikationsmönster
+                        li Utveckla kreativitet, lust och motivation i arbetet
+                        li Lära känna sig själva och varandra
 
-
+                    p Vi är högskoleutbildade bildterapeuter med lång yrkeserfarenhet från socialt arbete, vård, specialpedagogik och själavårdande arbete. Vi är alla medlemmar i Sveriges Riksförbund för bildterapeuter (SRBt), följer deras Etiska riktlinjer och erhåller handledning på vårt arbete.
+                        .standard-btn Se vad vi kan erbjuda.
