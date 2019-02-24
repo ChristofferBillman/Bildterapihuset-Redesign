@@ -1,3 +1,4 @@
+// Sidomeny.
 var open = true;
 document.getElementById("menuBtn").addEventListener("click", function(){
      if(!open) {
@@ -9,6 +10,7 @@ document.getElementById("menuBtn").addEventListener("click", function(){
     }
     });
 
+    // Stänger sidomenyn om man klickar varsomhelst utanför den.
     document.body.addEventListener("click", e => {
         var menuDetected = false;
         for(el of e.path) if(el.id == "menu" || el.id == "menuBtn") menuDetected = true;
